@@ -1,0 +1,178 @@
+x-airflow-common:
+  &airflow-common
+  build:
+    context: ./airflow
+    dockerfile: Dockerfile
+  image: clickstream-airflow:2.9.3
+  environment:
+    &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth'
+    _PIP_ADDITIONAL_REQUIREMENTS: ''
+    # NOTE: this must be JSON, not a plain URI. A URI like
+    # "spark://spark-master:7077" gets parsed with "spark" consumed as
+    # the connection's scheme/type, leaving host="spark-master" with the
+    # "spark://" prefix stripped off - and the Spark provider's hook
+    # does NOT re-add that prefix when building the master URL, causing
+    # "Could not parse Master URL: 'spark-master:7077'". Setting host
+    # explicitly via JSON keeps the "spark://" prefix intact.
+    AIRFLOW_CONN_SPARK_DEFAULT: '{"conn_type": "spark", "host": "spark://spark-master", "port": 7077}'
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - ./config:/opt/airflow/config
+    # These three mirror the paths mounted into spark-master/spark-worker.
+    # In Spark standalone mode, the driver (running here, in client mode)
+    # and the executors (running on the workers) all need to see files
+    # at the SAME paths - this is what makes that possible without a
+    # real distributed filesystem like HDFS or S3.
+    - ./spark-jobs:/opt/spark/jobs
+    - ./raw:/opt/spark/data/raw
+    - ./processed:/opt/spark/data/processed
+    - ./aggregated:/opt/spark/data/aggregated
+    - ./jars:/opt/spark/custom-jars
+  # Running as root (instead of the default non-root uid) so this
+  # container has consistent write access to the ./raw and ./processed
+  # volumes that spark-master/spark-worker (also root) write into. The
+  # Spark driver now runs inside THIS container (client mode), so it
+  # needs to create files there too - a uid mismatch here is what
+  # caused the "_SUCCESS (Permission denied)" error.
+  user: "0:0"
+  depends_on:
+    &airflow-common-depends-on
+    postgres:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+    restart: always
+
+  airflow-init:
+    <<: *airflow-common
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate
+        airflow users create \
+          --username admin \
+          --firstname admin \
+          --lastname admin \
+          --role Admin \
+          --email admin@example.com \
+          --password admin
+    environment:
+      <<: *airflow-common-env
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    healthcheck:
+      test: ["CMD-SHELL", 'airflow jobs check --job-type SchedulerJob --hostname "$${HOSTNAME}"']
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  spark-master:
+    image: apache/spark:3.5.1
+    user: root
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+    ports:
+      - "8081:8080"  # Spark master web UI (mapped to 8081 since 8080 is Airflow's)
+      - "7077:7077"  # Spark master RPC port, used by workers and spark-submit
+    volumes:
+      - ./spark-jobs:/opt/spark/jobs
+      - ./raw:/opt/spark/data/raw
+      - ./processed:/opt/spark/data/processed
+      - ./aggregated:/opt/spark/data/aggregated
+      - ./jars:/opt/spark/custom-jars
+    restart: always
+
+  spark-worker:
+    image: apache/spark:3.5.1
+    user: root
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+    environment:
+      - SPARK_WORKER_MEMORY=2g
+      - SPARK_WORKER_CORES=2
+    volumes:
+      - ./spark-jobs:/opt/spark/jobs
+      - ./raw:/opt/spark/data/raw
+      - ./processed:/opt/spark/data/processed
+      - ./aggregated:/opt/spark/data/aggregated
+      - ./jars:/opt/spark/custom-jars
+    depends_on:
+      - spark-master
+    restart: always
+
+  # This is a SEPARATE Postgres instance from the one above - that one
+  # (service "postgres") is Airflow's internal metadata store and
+  # should never be treated as application data. This one is the
+  # actual analytics warehouse the pipeline loads results into and
+  # that Metabase queries. Keeping them apart is deliberate and
+  # mirrors real setups, where you'd never point a BI tool at your
+  # orchestrator's internal database.
+  warehouse-postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: warehouse
+      POSTGRES_PASSWORD: warehouse
+      POSTGRES_DB: warehouse
+    ports:
+      - "5433:5432"  # exposed on a different host port than Airflow's DB would use
+    volumes:
+      - warehouse-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "warehouse"]
+      interval: 5s
+      retries: 5
+    restart: always
+
+  metabase:
+    image: metabase/metabase:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - warehouse-postgres
+    restart: always
+
+volumes:
+  postgres-db-volume:
+  warehouse-db-volume:

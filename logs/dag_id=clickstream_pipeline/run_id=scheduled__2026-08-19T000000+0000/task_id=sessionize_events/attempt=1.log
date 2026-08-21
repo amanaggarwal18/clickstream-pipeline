@@ -1,0 +1,126 @@
+[2026-08-20T13:23:38.505+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-20T13:23:38.536+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clickstream_pipeline.sessionize_events scheduled__2026-08-19T00:00:00+00:00 [queued]>
+[2026-08-20T13:23:38.543+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clickstream_pipeline.sessionize_events scheduled__2026-08-19T00:00:00+00:00 [queued]>
+[2026-08-20T13:23:38.544+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-20T13:23:38.559+0000] {taskinstance.py:2330} INFO - Executing <Task(SparkSubmitOperator): sessionize_events> on 2026-08-19 00:00:00+00:00
+[2026-08-20T13:23:38.568+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=2176) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-08-20T13:23:38.568+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'clickstream_pipeline', 'sessionize_events', 'scheduled__2026-08-19T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/clickstream_pipeline_dag.py', '--cfg-path', '/tmp/tmpvzrdpun3']
+[2026-08-20T13:23:38.570+0000] {standard_task_runner.py:64} INFO - Started process 2177 to run task
+[2026-08-20T13:23:38.571+0000] {standard_task_runner.py:91} INFO - Job 30: Subtask sessionize_events
+[2026-08-20T13:23:38.627+0000] {task_command.py:426} INFO - Running <TaskInstance: clickstream_pipeline.sessionize_events scheduled__2026-08-19T00:00:00+00:00 [running]> on host fddce5c4ea74
+[2026-08-20T13:23:38.715+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='clickstream_pipeline' AIRFLOW_CTX_TASK_ID='sessionize_events' AIRFLOW_CTX_EXECUTION_DATE='2026-08-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-19T00:00:00+00:00'
+[2026-08-20T13:23:38.723+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-20T13:23:38.742+0000] {base.py:84} INFO - Using connection ID 'spark_default' for task execution.
+[2026-08-20T13:23:38.744+0000] {spark_submit.py:473} INFO - Spark-Submit cmd: spark-submit --master spark://spark-master:7077 --conf spark.sql.sources.partitionOverwriteMode=dynamic --conf spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version=2 --name arrow-spark --verbose /opt/spark/jobs/sessionize_events.py --input-path /opt/spark/data/processed --output-path /opt/spark/data/aggregated
+[2026-08-20T13:23:39.864+0000] {spark_submit.py:634} INFO - Using properties file: null
+[2026-08-20T13:23:39.978+0000] {spark_submit.py:634} INFO - Parsed arguments:
+[2026-08-20T13:23:39.979+0000] {spark_submit.py:634} INFO - master                  spark://spark-master:7077
+[2026-08-20T13:23:39.980+0000] {spark_submit.py:634} INFO - remote                  null
+[2026-08-20T13:23:39.982+0000] {spark_submit.py:634} INFO - deployMode              null
+[2026-08-20T13:23:39.983+0000] {spark_submit.py:634} INFO - executorMemory          null
+[2026-08-20T13:23:39.984+0000] {spark_submit.py:634} INFO - executorCores           null
+[2026-08-20T13:23:39.985+0000] {spark_submit.py:634} INFO - totalExecutorCores      null
+[2026-08-20T13:23:39.986+0000] {spark_submit.py:634} INFO - propertiesFile          null
+[2026-08-20T13:23:39.987+0000] {spark_submit.py:634} INFO - driverMemory            null
+[2026-08-20T13:23:39.988+0000] {spark_submit.py:634} INFO - driverCores             null
+[2026-08-20T13:23:39.989+0000] {spark_submit.py:634} INFO - driverExtraClassPath    null
+[2026-08-20T13:23:39.990+0000] {spark_submit.py:634} INFO - driverExtraLibraryPath  null
+[2026-08-20T13:23:39.991+0000] {spark_submit.py:634} INFO - driverExtraJavaOptions  null
+[2026-08-20T13:23:39.992+0000] {spark_submit.py:634} INFO - supervise               false
+[2026-08-20T13:23:39.993+0000] {spark_submit.py:634} INFO - queue                   null
+[2026-08-20T13:23:39.994+0000] {spark_submit.py:634} INFO - numExecutors            null
+[2026-08-20T13:23:39.995+0000] {spark_submit.py:634} INFO - files                   null
+[2026-08-20T13:23:39.997+0000] {spark_submit.py:634} INFO - pyFiles                 null
+[2026-08-20T13:23:39.998+0000] {spark_submit.py:634} INFO - archives                null
+[2026-08-20T13:23:39.999+0000] {spark_submit.py:634} INFO - mainClass               null
+[2026-08-20T13:23:40.000+0000] {spark_submit.py:634} INFO - primaryResource         file:/opt/spark/jobs/sessionize_events.py
+[2026-08-20T13:23:40.001+0000] {spark_submit.py:634} INFO - name                    arrow-spark
+[2026-08-20T13:23:40.002+0000] {spark_submit.py:634} INFO - childArgs               [--input-path /opt/spark/data/processed --output-path /opt/spark/data/aggregated]
+[2026-08-20T13:23:40.003+0000] {spark_submit.py:634} INFO - jars                    null
+[2026-08-20T13:23:40.004+0000] {spark_submit.py:634} INFO - packages                null
+[2026-08-20T13:23:40.005+0000] {spark_submit.py:634} INFO - packagesExclusions      null
+[2026-08-20T13:23:40.005+0000] {spark_submit.py:634} INFO - repositories            null
+[2026-08-20T13:23:40.006+0000] {spark_submit.py:634} INFO - verbose                 true
+[2026-08-20T13:23:40.007+0000] {spark_submit.py:634} INFO - 
+[2026-08-20T13:23:40.008+0000] {spark_submit.py:634} INFO - Spark properties used, including those specified through
+[2026-08-20T13:23:40.009+0000] {spark_submit.py:634} INFO - --conf and those from the properties file null:
+[2026-08-20T13:23:40.009+0000] {spark_submit.py:634} INFO - (spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version,2)
+[2026-08-20T13:23:40.010+0000] {spark_submit.py:634} INFO - (spark.sql.sources.partitionOverwriteMode,dynamic)
+[2026-08-20T13:23:40.011+0000] {spark_submit.py:634} INFO - 
+[2026-08-20T13:23:40.013+0000] {spark_submit.py:634} INFO - 
+[2026-08-20T13:23:40.240+0000] {spark_submit.py:634} INFO - Main class:
+[2026-08-20T13:23:40.241+0000] {spark_submit.py:634} INFO - org.apache.spark.deploy.PythonRunner
+[2026-08-20T13:23:40.242+0000] {spark_submit.py:634} INFO - Arguments:
+[2026-08-20T13:23:40.244+0000] {spark_submit.py:634} INFO - file:/opt/spark/jobs/sessionize_events.py
+[2026-08-20T13:23:40.247+0000] {spark_submit.py:634} INFO - null
+[2026-08-20T13:23:40.248+0000] {spark_submit.py:634} INFO - --input-path
+[2026-08-20T13:23:40.249+0000] {spark_submit.py:634} INFO - /opt/spark/data/processed
+[2026-08-20T13:23:40.250+0000] {spark_submit.py:634} INFO - --output-path
+[2026-08-20T13:23:40.251+0000] {spark_submit.py:634} INFO - /opt/spark/data/aggregated
+[2026-08-20T13:23:40.252+0000] {spark_submit.py:634} INFO - Spark config:
+[2026-08-20T13:23:40.253+0000] {spark_submit.py:634} INFO - (spark.app.name,arrow-spark)
+[2026-08-20T13:23:40.254+0000] {spark_submit.py:634} INFO - (spark.app.submitTime,1787232220218)
+[2026-08-20T13:23:40.255+0000] {spark_submit.py:634} INFO - (spark.hadoop.mapreduce.fileoutputcommitter.algorithm.version,2)
+[2026-08-20T13:23:40.256+0000] {spark_submit.py:634} INFO - (spark.master,spark://spark-master:7077)
+[2026-08-20T13:23:40.257+0000] {spark_submit.py:634} INFO - (spark.sql.sources.partitionOverwriteMode,dynamic)
+[2026-08-20T13:23:40.258+0000] {spark_submit.py:634} INFO - (spark.submit.deployMode,client)
+[2026-08-20T13:23:40.258+0000] {spark_submit.py:634} INFO - (spark.submit.pyFiles,)
+[2026-08-20T13:23:40.259+0000] {spark_submit.py:634} INFO - Classpath elements:
+[2026-08-20T13:23:40.260+0000] {spark_submit.py:634} INFO - 
+[2026-08-20T13:23:40.261+0000] {spark_submit.py:634} INFO - 
+[2026-08-20T13:23:40.262+0000] {spark_submit.py:634} INFO - 
+[2026-08-20T13:23:41.323+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SparkContext: Running Spark version 3.5.1
+[2026-08-20T13:23:41.325+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SparkContext: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+[2026-08-20T13:23:41.326+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SparkContext: Java version 17.0.20
+[2026-08-20T13:23:41.379+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-08-20T13:23:41.466+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO ResourceUtils: ==============================================================
+[2026-08-20T13:23:41.468+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2026-08-20T13:23:41.469+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO ResourceUtils: ==============================================================
+[2026-08-20T13:23:41.470+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SparkContext: Submitted application: sessionize_events
+[2026-08-20T13:23:41.488+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2026-08-20T13:23:41.496+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO ResourceProfile: Limiting resource is cpu
+[2026-08-20T13:23:41.498+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2026-08-20T13:23:41.562+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SecurityManager: Changing view acls to: root
+[2026-08-20T13:23:41.564+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SecurityManager: Changing modify acls to: root
+[2026-08-20T13:23:41.565+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SecurityManager: Changing view acls groups to:
+[2026-08-20T13:23:41.566+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SecurityManager: Changing modify acls groups to:
+[2026-08-20T13:23:41.567+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root; groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY
+[2026-08-20T13:23:41.837+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO Utils: Successfully started service 'sparkDriver' on port 34033.
+[2026-08-20T13:23:41.875+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SparkEnv: Registering MapOutputTracker
+[2026-08-20T13:23:41.921+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SparkEnv: Registering BlockManagerMaster
+[2026-08-20T13:23:41.941+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2026-08-20T13:23:41.943+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2026-08-20T13:23:41.949+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2026-08-20T13:23:41.970+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-d499fec7-f878-4d98-a78a-d0c354e4d5c4
+[2026-08-20T13:23:41.987+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:41 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2026-08-20T13:23:42.007+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO SparkEnv: Registering OutputCommitCoordinator
+[2026-08-20T13:23:42.136+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2026-08-20T13:23:42.211+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2026-08-20T13:23:42.352+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+[2026-08-20T13:23:42.403+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.3:7077 after 27 ms (0 ms spent in bootstraps)
+[2026-08-20T13:23:42.490+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20260820132342-0004
+[2026-08-20T13:23:42.495+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20260820132342-0004/0 on worker-20260820130831-172.18.0.6-33481 (172.18.0.6:33481) with 2 core(s)
+[2026-08-20T13:23:42.498+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO StandaloneSchedulerBackend: Granted executor ID app-20260820132342-0004/0 on hostPort 172.18.0.6:33481 with 2 core(s), 1024.0 MiB RAM
+[2026-08-20T13:23:42.503+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38993.
+[2026-08-20T13:23:42.504+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO NettyBlockTransferService: Server created on fddce5c4ea74:38993
+[2026-08-20T13:23:42.505+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2026-08-20T13:23:42.514+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, fddce5c4ea74, 38993, None)
+[2026-08-20T13:23:42.518+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO BlockManagerMasterEndpoint: Registering block manager fddce5c4ea74:38993 with 434.4 MiB RAM, BlockManagerId(driver, fddce5c4ea74, 38993, None)
+[2026-08-20T13:23:42.524+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, fddce5c4ea74, 38993, None)
+[2026-08-20T13:23:42.527+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, fddce5c4ea74, 38993, None)
+[2026-08-20T13:23:42.537+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20260820132342-0004/0 is now RUNNING
+[2026-08-20T13:23:42.779+0000] {spark_submit.py:634} INFO - 26/08/20 13:23:42 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+[2026-08-20T13:24:02.435+0000] {spark_submit.py:634} INFO - [sessionize_events] Derived 730 sessions from 2000 events
+[2026-08-20T13:24:38.910+0000] {spark_submit.py:634} INFO - [sessionize_events] Wrote sessions and daily_metrics to /opt/spark/data/aggregated
+[2026-08-20T13:24:38.911+0000] {spark_submit.py:634} INFO - [sessionize_events] Daily metrics preview:
+[2026-08-20T13:24:48.016+0000] {spark_submit.py:634} INFO - +----------+------------------+--------------+----------------------------+---------------------+-------------------+-----------------------+-------------------+-------------------------+----------------------+------------------------+
+[2026-08-20T13:24:48.018+0000] {spark_submit.py:634} INFO - |dt        |daily_active_users|total_sessions|avg_session_duration_seconds|avg_pages_per_session|converting_sessions|sessions_with_page_view|sessions_with_click|sessions_with_add_to_cart|sessions_with_purchase|purchase_conversion_rate|
+[2026-08-20T13:24:48.019+0000] {spark_submit.py:634} INFO - +----------+------------------+--------------+----------------------------+---------------------+-------------------+-----------------------+-------------------+-------------------------+----------------------+------------------------+
+[2026-08-20T13:24:48.020+0000] {spark_submit.py:634} INFO - |2026-08-12|200               |730           |22.016438356164382          |2.426027397260274    |139                |582                    |366                |230                      |139                   |0.23883161512027493     |
+[2026-08-20T13:24:48.021+0000] {spark_submit.py:634} INFO - +----------+------------------+--------------+----------------------------+---------------------+-------------------+-----------------------+-------------------+-------------------------+----------------------+------------------------+
+[2026-08-20T13:24:48.023+0000] {spark_submit.py:634} INFO - 
+[2026-08-20T13:24:48.535+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-20T13:24:48.547+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=clickstream_pipeline, task_id=sessionize_events, run_id=scheduled__2026-08-19T00:00:00+00:00, execution_date=20260819T000000, start_date=20260820T132338, end_date=20260820T132448
+[2026-08-20T13:24:48.591+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-08-20T13:24:48.613+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-08-20T13:24:48.617+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

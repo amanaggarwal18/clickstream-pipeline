@@ -1,0 +1,231 @@
+[2026-08-20T06:39:24.112+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:39:24.114+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:39:24.119+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:39:24.118+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:39:24.150+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:39:24.232+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:39:24.232+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:39:24.264+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:39:24.264+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:39:24.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.229 seconds
+[2026-08-20T06:39:54.547+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:39:54.548+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:39:54.551+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:39:54.551+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:39:54.569+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:39:54.585+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:39:54.585+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:39:54.603+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:39:54.603+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:39:54.634+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.095 seconds
+[2026-08-20T06:40:25.412+0000] {processor.py:161} INFO - Started process (PID=224) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:40:25.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:40:25.420+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:40:25.420+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:40:25.628+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:40:26.111+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:40:26.110+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:40:26.143+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:40:26.142+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:40:26.200+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.807 seconds
+[2026-08-20T06:40:56.908+0000] {processor.py:161} INFO - Started process (PID=385) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:40:56.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:40:56.977+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:40:56.976+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:40:57.567+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:40:57.901+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:40:57.901+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:40:58.117+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:40:58.117+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:40:58.314+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 1.451 seconds
+[2026-08-20T06:41:28.426+0000] {processor.py:161} INFO - Started process (PID=533) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:41:28.427+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:41:28.430+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:41:28.429+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:41:28.450+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:41:28.474+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:41:28.474+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:41:28.486+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:41:28.486+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:41:28.506+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.086 seconds
+[2026-08-20T06:41:58.773+0000] {processor.py:161} INFO - Started process (PID=564) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:41:58.775+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:41:58.778+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:41:58.777+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:41:58.800+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:41:58.827+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:41:58.827+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:41:58.843+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:41:58.843+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:41:58.863+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.098 seconds
+[2026-08-20T06:42:29.014+0000] {processor.py:161} INFO - Started process (PID=588) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:42:29.017+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:42:29.019+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:42:29.019+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:42:29.035+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:42:29.061+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:42:29.061+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:42:29.075+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:42:29.075+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:42:29.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.088 seconds
+[2026-08-20T06:42:59.327+0000] {processor.py:161} INFO - Started process (PID=619) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:42:59.330+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:42:59.332+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:42:59.332+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:42:59.356+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:42:59.398+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:42:59.398+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:42:59.412+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:42:59.412+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:42:59.434+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.116 seconds
+[2026-08-20T06:43:29.685+0000] {processor.py:161} INFO - Started process (PID=643) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:43:29.686+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:43:29.688+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:43:29.688+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:43:29.706+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:43:29.729+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:43:29.728+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:43:29.739+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:43:29.739+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:43:29.758+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.077 seconds
+[2026-08-20T06:44:00.000+0000] {processor.py:161} INFO - Started process (PID=668) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:44:00.001+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:44:00.003+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:44:00.003+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:44:00.018+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:44:00.044+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:44:00.043+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:44:00.055+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:44:00.054+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:44:00.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.078 seconds
+[2026-08-20T06:44:30.368+0000] {processor.py:161} INFO - Started process (PID=700) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:44:30.369+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:44:30.373+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:44:30.372+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:44:30.401+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:44:30.452+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:44:30.451+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:44:30.474+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:44:30.473+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:44:30.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.148 seconds
+[2026-08-20T06:45:02.541+0000] {processor.py:161} INFO - Started process (PID=172) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:45:02.545+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:45:02.552+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:45:02.551+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:45:02.622+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:45:02.686+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:45:02.685+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:45:02.717+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:45:02.717+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:45:02.758+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.233 seconds
+[2026-08-20T06:45:32.999+0000] {processor.py:161} INFO - Started process (PID=196) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:45:33.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:45:33.009+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:45:33.009+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:45:33.051+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:45:33.377+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:45:33.377+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:45:33.391+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:45:33.391+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:45:33.471+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.482 seconds
+[2026-08-20T06:46:03.698+0000] {processor.py:161} INFO - Started process (PID=227) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:46:03.700+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:46:03.703+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:46:03.702+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:46:03.724+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:46:03.751+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:46:03.751+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:46:03.765+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:46:03.765+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:46:03.788+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.096 seconds
+[2026-08-20T06:46:33.921+0000] {processor.py:161} INFO - Started process (PID=307) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:46:33.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:46:33.926+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:46:33.926+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:46:33.951+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:46:33.989+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:46:33.989+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:46:34.008+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:46:34.008+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:46:34.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.125 seconds
+[2026-08-20T06:47:04.288+0000] {processor.py:161} INFO - Started process (PID=525) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:47:04.289+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:47:04.292+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:47:04.291+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:47:04.313+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:47:04.339+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:47:04.338+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:47:04.354+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:47:04.353+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:47:04.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.093 seconds
+[2026-08-20T06:47:34.513+0000] {processor.py:161} INFO - Started process (PID=549) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:47:34.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:47:34.518+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:47:34.517+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:47:34.537+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:47:34.567+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:47:34.566+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:47:34.579+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:47:34.578+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:47:34.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.093 seconds
+[2026-08-20T06:48:04.839+0000] {processor.py:161} INFO - Started process (PID=580) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:48:04.842+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:48:04.845+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:48:04.844+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:48:04.866+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:48:04.893+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:48:04.893+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:48:04.908+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:48:04.908+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:48:04.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.099 seconds
+[2026-08-20T06:48:35.060+0000] {processor.py:161} INFO - Started process (PID=612) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:48:35.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:48:35.064+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:48:35.063+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:48:35.081+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:48:35.111+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:48:35.111+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:48:35.123+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:48:35.122+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:48:35.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.094 seconds
+[2026-08-20T06:49:05.394+0000] {processor.py:161} INFO - Started process (PID=636) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:49:05.396+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:49:05.398+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:49:05.398+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:49:05.418+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:49:05.450+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:49:05.449+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:49:05.464+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:49:05.464+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:49:05.489+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.103 seconds
+[2026-08-20T06:49:35.753+0000] {processor.py:161} INFO - Started process (PID=667) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:49:35.755+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:49:35.758+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:49:35.758+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:49:35.783+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:49:35.819+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:49:35.818+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:49:35.836+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:49:35.835+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:49:35.860+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.117 seconds
+[2026-08-20T06:50:06.182+0000] {processor.py:161} INFO - Started process (PID=691) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:50:06.184+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:50:06.187+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:50:06.186+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:50:06.205+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:50:06.232+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:50:06.232+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:50:06.245+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:50:06.245+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:50:06.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.095 seconds
+[2026-08-20T06:50:36.439+0000] {processor.py:161} INFO - Started process (PID=722) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:50:36.440+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:50:36.443+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:50:36.443+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:50:36.459+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:50:36.490+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:50:36.489+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:50:36.502+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:50:36.502+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:50:36.534+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.104 seconds
+[2026-08-20T06:51:06.714+0000] {processor.py:161} INFO - Started process (PID=753) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:51:06.716+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:51:06.719+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:51:06.718+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:51:06.740+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:51:06.777+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:51:06.776+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:51:06.793+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:51:06.793+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:51:06.819+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.113 seconds
+[2026-08-20T06:51:37.065+0000] {processor.py:161} INFO - Started process (PID=778) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:51:37.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:51:37.074+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:51:37.073+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:51:37.097+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:51:37.127+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:51:37.127+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:51:37.154+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:51:37.154+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:51:37.200+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.145 seconds
+[2026-08-20T06:52:07.520+0000] {processor.py:161} INFO - Started process (PID=809) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:52:07.522+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:52:07.525+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:52:07.525+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:52:07.542+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:52:07.574+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:52:07.574+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:52:07.592+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:52:07.592+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:52:07.613+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.102 seconds
+[2026-08-20T06:52:37.843+0000] {processor.py:161} INFO - Started process (PID=833) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:52:37.844+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:52:37.848+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:52:37.847+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:52:37.865+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:52:37.891+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:52:37.890+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:52:37.902+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:52:37.902+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:52:37.920+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.087 seconds
+[2026-08-20T06:53:08.149+0000] {processor.py:161} INFO - Started process (PID=864) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:53:08.150+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:53:08.153+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:53:08.152+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:53:08.171+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:53:08.201+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:53:08.201+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:53:08.215+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:53:08.215+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:53:08.236+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.097 seconds
+[2026-08-20T06:53:38.493+0000] {processor.py:161} INFO - Started process (PID=888) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:53:38.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:53:38.498+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:53:38.498+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:53:38.518+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:53:38.543+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:53:38.542+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:53:38.555+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:53:38.555+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:53:38.577+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.092 seconds
+[2026-08-20T06:54:08.828+0000] {processor.py:161} INFO - Started process (PID=919) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:54:08.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:54:08.833+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:54:08.832+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:54:08.857+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:54:08.885+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:54:08.885+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:54:08.897+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:54:08.897+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:54:08.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.101 seconds
+[2026-08-20T06:54:39.082+0000] {processor.py:161} INFO - Started process (PID=950) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:54:39.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:54:39.087+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:54:39.086+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:54:39.110+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:54:39.144+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:54:39.144+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:54:39.163+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:54:39.163+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:54:39.192+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.120 seconds
+[2026-08-20T06:55:09.429+0000] {processor.py:161} INFO - Started process (PID=974) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:55:09.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T06:55:09.434+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:55:09.433+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:55:09.459+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T06:55:09.497+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:55:09.497+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T06:55:09.516+0000] {logging_mixin.py:188} INFO - [2026-08-20T06:55:09.515+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T06:55:09.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.127 seconds
+[2026-08-20T11:40:55.150+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T11:40:55.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clickstream_clean_events_dag.py for tasks to queue
+[2026-08-20T11:40:55.153+0000] {logging_mixin.py:188} INFO - [2026-08-20T11:40:55.153+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T11:40:55.171+0000] {processor.py:840} INFO - DAG(s) 'clickstream_clean_events' retrieved from /opt/airflow/dags/clickstream_clean_events_dag.py
+[2026-08-20T11:40:55.338+0000] {logging_mixin.py:188} INFO - [2026-08-20T11:40:55.338+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-20T11:40:55.355+0000] {logging_mixin.py:188} INFO - [2026-08-20T11:40:55.354+0000] {dag.py:3947} INFO - Setting next_dagrun for clickstream_clean_events to None, run_after=None
+[2026-08-20T11:40:55.387+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clickstream_clean_events_dag.py took 0.242 seconds
