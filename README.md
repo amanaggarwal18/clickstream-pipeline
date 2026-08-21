@@ -7,7 +7,7 @@ computes funnel/engagement metrics, and loads the results into a
 Postgres warehouse for dashboarding in Metabase.
 
 ## Dashbaord
-![Metbase Dashbaord](images/MetaBase Dashboard.png)
+![Metbase Dashbaord](images/metabase-dashboard.png)
 
 ## Architecture
 
